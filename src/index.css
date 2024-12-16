@@ -20,6 +20,14 @@ body {
     background-size: cover;
 }
 
+.lh-125 {
+    line-height: 125% !important;
+}
+
+.lh-175 {
+    line-height: 175% !important;
+}
+
 .services > .slick-list > .slick-track {
     display: flex;
     gap: 24px;

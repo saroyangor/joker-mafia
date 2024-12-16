@@ -79,10 +79,10 @@ export function Hero({allRefs, heroRef}) {
   return (
     <section className="flex lg:min-h-[92vh]" ref={heroRef}>
       <div className="lg:max-w-[726px] mt-36 lg:absolute">
-        <h1 className="lg:text-8xl sm:text-6xl text-4xl font-bold lg:mb-11 mb-5 leading-tight">
+        <h1 className="lg:text-8xl sm:text-6xl text-4xl font-bold lg:mb-11 mb-5 lh-125">
           <span className="text-red">Мафия</span> клуб “Joker”
         </h1>
-        <p className="lg:text-4xl sm:text-2xl text-xl leading-tight">
+        <p className="lg:text-4xl sm:text-2xl text-xl lh-125">
           <span className="text-red font-bold">Спортивная мафия</span> в самом центре Еревана для начинающих и опытных
           мафиози. <span className="text-red font-medium">Играем 5 раз в неделю</span> в ресторане “Пятница” по адресу
           Маштоца 39/12.

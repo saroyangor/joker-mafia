@@ -49,7 +49,7 @@ export function Services({servicesRef}) {
           <div className="xl:w-full flex flex-col justify-end relative group cursor-pointer">
             <div className="absolute md:w-full w-11/12 h-full bg-black opacity-0 group-hover:opacity-75 transition duration-500">
               <p
-                className="xl:text-2xl md:text-xl sm:text-2xl text-sm leading-7 w-10/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                className="xl:text-2xl md:text-xl sm:text-2xl text-sm lh-175 w-10/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Каждую пятницу и субботу проводим мастер классы и игры с разборами для начинающих мафиози. Опытные
                 ведущие
                 дают разбор после каждой игры, чтобы новые игроки легко вливались в комьюнити и оттачивали свои навыки
@@ -66,7 +66,7 @@ export function Services({servicesRef}) {
           <div className="xl:w-full flex flex-col justify-end relative group cursor-pointer">
             <div className="absolute md:w-full w-11/12 h-full bg-black opacity-0 group-hover:opacity-75 transition duration-500">
               <p
-                className="xl:text-2xl md:text-xl sm:text-2xl text-sm leading-7 w-10/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                className="xl:text-2xl md:text-xl sm:text-2xl text-sm lh-175 w-10/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Играем фанки с опытными игроками каждые вторник, четверг и субботу, а также регулярно проводим закрытые
                 внутриклубные миникапы и международные турниры под эгидой ФИИМ.
 
@@ -81,7 +81,7 @@ export function Services({servicesRef}) {
           <div className="xl:w-full flex flex-col justify-end relative group cursor-pointer">
             <div className="absolute md:w-full w-11/12 h-full bg-black opacity-0 group-hover:opacity-75 transition duration-500">
               <p
-                className="xl:text-2xl md:text-xl sm:text-2xl text-sm leading-7 w-10/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                className="xl:text-2xl md:text-xl sm:text-2xl text-sm lh-175 w-10/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 Организуем корпоратив для вашей компании под персональные запросы. Добавим интересных ролей, упростим
                 правила и
                 сделаем всё максимально возможное, чтобы вы с коллегами как следует повеселились. Бурные эмоции
