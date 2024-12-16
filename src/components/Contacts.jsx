@@ -8,7 +8,7 @@ export function Contacts() {
     <section className="mt-60">
       <h2 className="text-7xl font-medium leading-snug">Контакты</h2>
       <p className="text-3xl leading-normal mt-6">
-        Мы всегда на связи в телеграме и инстаграме - просто отправьте сообщение, и мы ответим вам в течение 12 часов.
+        Мы всегда на связи в телеграме и инстаграме - просто отправьте сообщение, и мы ответим вам в рабочее время с 14:00 до 20:00.
       </p>
       <ul className="flex gap-5 mt-9">
         <li>

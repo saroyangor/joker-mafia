@@ -11,7 +11,7 @@ export function Prices() {
               Участники внутриклубных миникапов
             </li>
             <li>
-              Игроки с турнирным опытом
+              Участники турниров, представляющие клуб ‘Joker’
             </li>
             <li>
               Обладатели именной маски клуба Джокер
@@ -23,7 +23,7 @@ export function Prices() {
           <p className="text-5xl min-w-72">2500 AMD</p>
           <ul className="text-3xl leading-normal list-disc">
             <li>
-              Любители, сыгравшие от 12 вечеров
+              Любители, сыгравшие от 12 вечеров в клубе, а также игроки с турнирным опытом
             </li>
           </ul>
         </div>
@@ -32,7 +32,7 @@ export function Prices() {
           <p className="text-5xl min-w-72">3000 AMD</p>
           <ul className="text-3xl leading-normal list-disc">
             <li>
-              Начинающие игроки, сыгравшие от 1 до 12 вечеров
+              Начинающие игроки без турнирного опыта игры в спортивную мафию
             </li>
           </ul>
         </div>
@@ -41,13 +41,13 @@ export function Prices() {
           <p className="text-5xl min-w-72">4000 AMD</p>
           <ul className="text-3xl leading-normal list-disc">
             <li>
-              Участие в интеллектуальном тренинге в формате мафии
+              Участие в мастер классе в формате мафии (идеально для самых начинающих)
             </li>
           </ul>
         </div>
       </div>
       <p className="text-2xl leading-loose mt-6">
-        *цены указаны за игровой вечер (3-6 игр)
+        *цены указаны за игровой вечер (3-6 игр) по 40-60 минут
       </p>
     </section>
   )
