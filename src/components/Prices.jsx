@@ -1,6 +1,7 @@
-export function Prices() {
+// eslint-disable-next-line react/prop-types
+export function Prices({pricesRef}) {
   return (
-    <section className="lg:mt-60 sm:mt-24 mt-16">
+    <section className="lg:mt-60 sm:mt-24 mt-16" ref={pricesRef}>
       <h2 className="lg:text-7xl sm:text-5xl text-3xl font-medium leading-snug lg:border-b border-white/50">Прайс лист*</h2>
 
       <div className="border lg:border-none rounded-md p-3 lg:p-0 mt-2.5 lg:mt-0">

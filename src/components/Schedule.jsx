@@ -3,16 +3,23 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-export function Schedule() {
+// eslint-disable-next-line react/prop-types
+export function Schedule({scheduleRef}) {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     className: 'schedule',
     dotsClass: 'slick-dots',
     responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          infinite: true
+        },
+      },
       {
         breakpoint: 640,
         settings: {
@@ -24,7 +31,7 @@ export function Schedule() {
   }
 
   return (
-    <section className="lg:mt-60 sm:mt-24 mt-16">
+    <section className="lg:mt-60 sm:mt-24 mt-16" ref={scheduleRef}>
       <h2 className="lg:text-7xl sm:text-5xl text-3xl font-medium leading-snug">Расписание</h2>
       <div className="hidden mt-6 lg:flex justify-between ">
         <ul className="flex flex-col gap-5 text-3xl">

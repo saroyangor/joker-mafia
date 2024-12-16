@@ -2,9 +2,10 @@ import about1 from '../assets/about1.png'
 import about2 from '../assets/about2.png'
 import about3 from '../assets/about3.png'
 
-export function About() {
+// eslint-disable-next-line react/prop-types
+export function About({aboutRef}) {
   return (
-    <section className="mt-56 hidden lg:block">
+    <section className="mt-56 hidden lg:block" ref={aboutRef}>
       <h2 className="text-7xl font-medium leading-snug">О нас</h2>
       <article className="flex mt-6 gap-12">
         <div className="flex w-1/2 gap-6 items-center">

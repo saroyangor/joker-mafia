@@ -4,9 +4,10 @@ import contact3 from '../assets/contact3.svg'
 import contact4 from '../assets/contact4.svg'
 import contact5 from '../assets/contact5.svg'
 
-export function Contacts() {
+// eslint-disable-next-line react/prop-types
+export function Contacts({contactsRef}) {
   return (
-    <section className="lg:mt-60 sm:mt-24 mt-16 mb-6 lg:mb-0">
+    <section className="lg:mt-60 sm:mt-24 mt-16 mb-6 lg:mb-0" ref={contactsRef}>
       <h2 className="lg:text-7xl sm:text-5xl text-3xl font-medium leading-snug">Контакты</h2>
       <p className="lg:text-3xl sm:text-2xl text-xl leading-normal mt-6">
         Мы всегда на связи в телеграме и инстаграме - просто отправьте сообщение, и мы ответим вам в рабочее время с 14:00 до 20:00.

@@ -27,8 +27,21 @@ body {
 
 .schedule > .slick-list > .slick-track {
     display: flex;
-    gap: 24px;
+    div {
+        margin-right: 24px;
+    }
     margin-bottom: 16px;
+}
+
+.reviews > .slick-list > .slick-track {
+    display: flex;
+    div {
+        margin-right: 24px;
+
+        @media screen and (max-width: 1024px){
+            margin-right: 0;
+        }
+    }
 }
 
 .slick-dots li button:before{

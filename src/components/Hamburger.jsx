@@ -1,8 +1,4 @@
-import { useState } from 'react'
-
-export function Hamburger() {
-  const [opened, setOpened] = useState(false)
-
+export function Hamburger({opened, setOpened}) {
   return (
     <div className={"grid place-content-center w-8 h-8 cursor-pointer" + (opened ? " hamburger-toggle" : "")} onClick={() => setOpened(!opened)}>
       <div className="

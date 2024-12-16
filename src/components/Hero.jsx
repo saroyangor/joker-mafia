@@ -1,10 +1,83 @@
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+
 import { Hamburger } from './Hamburger.jsx'
 
 import logo from '../assets/logo.svg'
 
-export function Hero() {
+const mobileLinks = [
+  {
+    'title': 'Услуги',
+    'link': '/services',
+  },
+  {
+    'title': 'Расписание',
+    'link': '/schedule',
+  },
+  {
+    'title': 'Цены',
+    'link': '/prices',
+  },
+  {
+    'title': 'Отзывы',
+    'link': '/reviews',
+  },
+  {
+    'title': 'Контакты',
+    'link': '/contacts',
+  },
+]
+
+const links = [
+  {
+    'title': 'О нас',
+    'link': '/about'
+  },
+  {
+    'title': 'Услуги',
+    'link': '/services',
+  },
+  {
+    'title': 'Расписание',
+    'link': '/schedule',
+  },
+  {
+    'title': 'Цены',
+    'link': '/prices',
+  },
+  {
+    'title': 'Отзывы',
+    'link': '/reviews',
+  },
+  {
+    'title': 'Галерея',
+    'link': '/gallery',
+  },
+  {
+    'title': 'Контакты',
+    'link': '/contacts',
+  },
+]
+
+// eslint-disable-next-line react/prop-types
+export function Hero({allRefs, heroRef}) {
+  const [opened, setOpened] = useState(false)
+
+  const handleClick = (link) => {
+    if(link === 'hero') {
+      // eslint-disable-next-line react/prop-types
+      heroRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    } else {
+      const block = link.split('/')[1]
+      // eslint-disable-next-line react/prop-types
+      allRefs[block].current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+
+    setOpened(false)
+  }
+
   return (
-    <section className="flex lg:min-h-[92vh]">
+    <section className="flex lg:min-h-[92vh]" ref={heroRef}>
       <div className="lg:max-w-[726px] mt-36 lg:absolute">
         <h1 className="lg:text-8xl sm:text-6xl text-4xl font-bold lg:mb-11 mb-5 leading-tight">
           <span className="text-red">Мафия</span> клуб “Joker”
@@ -21,19 +94,41 @@ export function Hero() {
       </div>
       <div
         className="lg:hidden flex justify-between px-4 w-full items-center sm:h-36 h-24 fixed top-0 left-0 z-50 bg-black bg-opacity-90">
-        <img className="sm:w-48 sm:h-24 w-36 h-18" src={logo} alt="logo"/>
-        <Hamburger/>
+        <NavLink onClick={() => handleClick('hero')} to="/">
+          <img className="sm:w-48 sm:h-24 w-32 h-16" src={logo} alt="logo"/>
+        </NavLink>
+        <Hamburger opened={opened} setOpened={setOpened}/>
+        {opened && (
+          <div
+            className="fixed left-0 bg-black h-[calc(100vh-36px)] sm:h-[calc(100vh-144px)] top-16 sm:top-36 z-50 w-full">
+            <nav className="h-full">
+              <ul className="flex flex-col text-3xl gap-12 items-center h-full justify-center">
+                {
+                  mobileLinks.map(link => (
+                    <li key={link.title}>
+                      <NavLink onClick={() => handleClick(link.link)} to={link.link}>
+                        {link.title}
+                      </NavLink>
+                    </li>
+                  ))
+                }
+              </ul>
+            </nav>
+          </div>
+        )}
       </div>
       <div className="right 2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block">
         <nav>
           <ul className="flex mt-12 gap-8">
-            <li><a href="">О нас</a></li>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">Расписание</a></li>
-            <li><a href="">Цены</a></li>
-            <li><a href="">Отзывы</a></li>
-            <li><a href="">Галерея</a></li>
-            <li><a href="">Контакты</a></li>
+            {
+              links.map(link => (
+                <li key={link.title}>
+                  <NavLink onClick={() => handleClick(link.link)} to={link.link}>
+                    {link.title}
+                  </NavLink>
+                </li>
+              ))
+            }
           </ul>
         </nav>
       </div>

@@ -6,7 +6,8 @@ import service1 from '../assets/service1.png'
 import service2 from '../assets/service2.png'
 import service3 from '../assets/service3.png'
 
-export function Services() {
+// eslint-disable-next-line react/prop-types
+export function Services({servicesRef}) {
   const settings = {
     dots: false,
     infinite: true,
@@ -42,7 +43,7 @@ export function Services() {
   }
 
   return (
-    <section className="xl:mt-64 flex sm:mt-24 mt-16 xl:min-h-[552px] gap-6 justify-between">
+    <section className="xl:mt-64 flex sm:mt-24 mt-16 xl:min-h-[552px] gap-6 justify-between" ref={servicesRef}>
       <div className="slider-container w-full">
         <Slider {...settings}>
           <div className="xl:w-full flex flex-col justify-end relative group cursor-pointer">

@@ -6,9 +6,10 @@ import gallery5 from '../assets/gallery5.png'
 import gallery6 from '../assets/gallery6.png'
 import gallery7 from '../assets/gallery7.png'
 
-export function Gallery() {
+// eslint-disable-next-line react/prop-types
+export function Gallery({galleryRef}) {
   return (
-    <section className="lg:mt-60 mt-24 hidden sm:block">
+    <section className="lg:mt-60 mt-24 hidden sm:block" ref={galleryRef}>
       <h2 className="lg:text-7xl text-5xl font-medium leading-snug">Галерея</h2>
 
       <div className="w-fit mx-auto">
