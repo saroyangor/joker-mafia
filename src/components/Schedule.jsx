@@ -24,8 +24,8 @@ export function Schedule() {
   }
 
   return (
-    <section className="lg:mt-60 mt-20">
-      <h2 className="lg:text-7xl text-5xl font-medium leading-snug">Расписание</h2>
+    <section className="lg:mt-60 sm:mt-24 mt-16">
+      <h2 className="lg:text-7xl sm:text-5xl text-3xl font-medium leading-snug">Расписание</h2>
       <div className="hidden mt-6 lg:flex justify-between ">
         <ul className="flex flex-col gap-5 text-3xl">
           <li>Вторник</li>
@@ -55,21 +55,21 @@ export function Schedule() {
       <div className="slider-container mt-2.5 lg:hidden">
         <Slider {...settings}>
           <div className="bg-lightgray rounded-lg p-3 min-w-80">
-            <h3 className="font-bold text-xl text-black">Основной состав</h3>
-            <p className="text-black mt-2">🗓 Вторник, четверг, суббота</p>
-            <p className="text-black mt-1.5">🕘20:00-00:00</p>
+            <h3 className="font-bold sm:text-xl text-base text-black">Основной состав</h3>
+            <p className="text-black mt-2 text-sm sm:text-base">🗓 Вторник, четверг, суббота</p>
+            <p className="text-black mt-1.5 text-sm sm:text-base">🕘20:00-00:00</p>
           </div>
 
           <div className="bg-lightgray rounded-lg p-3 min-w-80">
-            <h3 className="font-bold text-xl text-black">Школа мафии (новички)</h3>
-            <p className="text-black mt-2">🗓 Пятница</p>
-            <p className="text-black mt-1.5">🕘19:30-00:00</p>
+            <h3 className="font-bold sm:text-xl text-base text-black">Школа мафии (новички)</h3>
+            <p className="text-black mt-2 text-sm sm:text-base">🗓 Пятница</p>
+            <p className="text-black mt-1.5 text-sm sm:text-base">🕘19:30-00:00</p>
           </div>
 
           <div className="bg-lightgray rounded-lg p-3 min-w-80">
-            <h3 className="font-bold text-xl text-black">Мафия на армянском</h3>
-            <p className="text-black mt-2">🗓 Среда</p>
-            <p className="text-black mt-1.5">🕘20:00-00:00</p>
+            <h3 className="font-bold sm:text-xl text-base text-black">Мафия на армянском</h3>
+            <p className="text-black mt-2 text-sm sm:text-base">🗓 Среда</p>
+            <p className="text-black mt-1.5 text-sm sm:text-base">🕘20:00-00:00</p>
           </div>
         </Slider>
       </div>
