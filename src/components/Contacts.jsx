@@ -12,7 +12,7 @@ export function Contacts() {
         Мы всегда на связи в телеграме и инстаграме - просто отправьте сообщение, и мы ответим вам в рабочее время с 14:00 до 20:00.
       </p>
       <ul className="flex gap-5 mt-9">
-        <li>git
+        <li>
           <a href="">
             <img src={contact1} alt="Telegram"/>
           </a>
