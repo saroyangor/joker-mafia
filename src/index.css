@@ -25,6 +25,12 @@ body {
     gap: 24px;
 }
 
+.schedule > .slick-list > .slick-track {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
 .slick-dots li button:before{
     color: white;
 }

@@ -16,6 +16,8 @@ export default {
       'iris-100': '#5d5fef',
       'iris-80': '#7879f1',
       'iris-60': '#a5a6f6',
+      'lightgray': '#ebe7e7',
+      'graylight': '#D9D9D9',
     },
     fontFamily: {
       'montserrat': ['Montserrat', 'sans-serif'],
