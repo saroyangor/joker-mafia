@@ -84,13 +84,15 @@ export function Hero({allRefs, heroRef}) {
         </h1>
         <p className="lg:text-4xl sm:text-2xl text-xl lh-125">
           <span className="text-red font-bold">Спортивная мафия</span> в самом центре Еревана для начинающих и опытных
-          мафиози. <span className="text-red font-medium">Играем 5 раз в неделю</span> в ресторане “Пятница” по адресу
-          Маштоца 39/12.
+          мафиози. <span className="text-red font-medium">Играем 5 раз в неделю</span> в lounge bar "The Babylon" по адресу
+          Терьяна 59.
         </p>
-        <button
+        <a
+          href="https://t.me/Mafclubjoker"
+          target="_blank"
           className="lg:text-3xl sm:text-xl text-lg bg-red text-white sm:p-6 p-3 rounded-full lg:mt-24 sm:mt-12 mt-4 hover:bg-white hover:text-red transition duration-300">Записаться
           на игру
-        </button>
+        </a>
       </div>
       <div
         className="lg:hidden flex justify-between px-4 w-full items-center sm:h-36 h-24 fixed top-0 left-0 z-50 bg-black bg-opacity-90">
