@@ -4,6 +4,34 @@ import contact3 from '../assets/contact3.svg'
 import contact4 from '../assets/contact4.svg'
 import contact5 from '../assets/contact5.svg'
 
+const links = [
+  {
+    img: contact1,
+    link: "https://t.me/Mafclubjoker",
+    alt: "Telegram"
+  },
+  {
+    img: contact2,
+    link: "https://www.instagram.com/yerevanmafiajoker/",
+    alt: "Instagram"
+  },
+  {
+    img: contact3,
+    link: "https://www.facebook.com/mafia.yerevan",
+    alt: "Facebook"
+  },
+  {
+    img: contact4,
+    link: "https://mafiaworldtour.com/clubs/324",
+    alt: "FIIM"
+  },
+  {
+    img: contact5,
+    link: "https://www.google.com/maps/place/%D0%9C%D0%B0%D1%84%D0%B8%D1%8F+%D0%BA%D0%BB%D1%83%D0%B1+%22Joker%22/@40.1725754,43.2724028,8z/data=!4m6!3m5!1s0x406abdf851e966eb:0xd4f5825c83a6d017!8m2!3d40.1886226!4d44.5165139!16s%2Fg%2F11w1nkzqn2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
+    alt: "Google Maps"
+  }
+]
+
 // eslint-disable-next-line react/prop-types
 export function Contacts({contactsRef}) {
   return (
@@ -13,31 +41,15 @@ export function Contacts({contactsRef}) {
         Мы всегда на связи в телеграме и инстаграме - просто отправьте сообщение, и мы ответим вам в рабочее время с 14:00 до 20:00.
       </p>
       <ul className="flex gap-5 mt-9">
-        <li>
-          <a href="https://t.me/Mafclubjoker" target="_blank">
-            <img src={contact1} alt="Telegram"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/yerevanmafiajoker/" target="_blank">
-            <img src={contact2} alt="Instagram"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/mafia.yerevan" target="_blank">
-            <img src={contact3} alt="Facebook"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://mafiaworldtour.com/clubs/324" target="_blank">
-            <img src={contact4} alt="FIIM"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.google.com/maps/place/%D0%9C%D0%B0%D1%84%D0%B8%D1%8F+%D0%BA%D0%BB%D1%83%D0%B1+%22Joker%22/@40.1725754,43.2724028,8z/data=!4m6!3m5!1s0x406abdf851e966eb:0xd4f5825c83a6d017!8m2!3d40.1886226!4d44.5165139!16s%2Fg%2F11w1nkzqn2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-            <img src={contact5} alt="FIIM"/>
-          </a>
-        </li>
+        {
+          links.map(link => (
+            <li key={link.link}>
+              <a href={link.link} target="_blank">
+                <img src={link.img} alt={link.alt}/>
+              </a>
+            </li>
+          ))
+        }
       </ul>
     </section>
   )
