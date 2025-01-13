@@ -3,6 +3,7 @@ import contact2 from '../assets/contact2.svg'
 import contact3 from '../assets/contact3.svg'
 import contact4 from '../assets/contact4.svg'
 import contact5 from '../assets/contact5.svg'
+import contact6 from '../assets/contact6.svg'
 
 const links = [
   {
@@ -29,6 +30,11 @@ const links = [
     img: contact5,
     link: "https://www.google.com/maps/place/%D0%9C%D0%B0%D1%84%D0%B8%D1%8F+%D0%BA%D0%BB%D1%83%D0%B1+%22Joker%22/@40.1725754,43.2724028,8z/data=!4m6!3m5!1s0x406abdf851e966eb:0xd4f5825c83a6d017!8m2!3d40.1886226!4d44.5165139!16s%2Fg%2F11w1nkzqn2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D",
     alt: "Google Maps"
+  },
+  {
+    img: contact6,
+    link: "https://www.youtube.com/@mafclubjoker",
+    alt: "YouTube"
   }
 ]
 

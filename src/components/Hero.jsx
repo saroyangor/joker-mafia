@@ -28,37 +28,6 @@ const mobileLinks = [
   },
 ]
 
-const links = [
-  {
-    'title': 'О нас',
-    'link': '/about',
-  },
-  {
-    'title': 'Услуги',
-    'link': '/services',
-  },
-  {
-    'title': 'Расписание',
-    'link': '/schedule',
-  },
-  {
-    'title': 'Цены',
-    'link': '/prices',
-  },
-  {
-    'title': 'Отзывы',
-    'link': '/reviews',
-  },
-  {
-    'title': 'Галерея',
-    'link': '/gallery',
-  },
-  {
-    'title': 'Контакты',
-    'link': '/contacts',
-  },
-]
-
 // eslint-disable-next-line react/prop-types
 export function Hero({allRefs, heroRef}) {
   const [opened, setOpened] = useState(false)
@@ -84,9 +53,8 @@ export function Hero({allRefs, heroRef}) {
         </h1>
         <p className="lg:text-4xl sm:text-2xl text-xl lh-125">
           <span className="text-red font-bold">Спортивная мафия</span> в самом центре Еревана для начинающих и опытных
-          мафиози. <span className="text-red font-medium">Играем 5 раз в неделю</span> в lounge bar "The Babylon" по
-          адресу
-          Терьяна 59.
+          мафиози. <span className="text-red font-medium">Играем 5 раз в неделю</span> в lounge bar &#34;The Babylon&#34; по
+          адресу Терьяна, 63.
         </p>
         <button
           className="lg:text-3xl sm:text-xl text-lg bg-red text-white sm:p-6 p-3 rounded-full lg:mt-24 sm:mt-12 mt-4 hover:bg-white hover:text-red transition duration-300">
@@ -118,21 +86,7 @@ export function Hero({allRefs, heroRef}) {
           </div>
         )}
       </div>
-      <div className="right 2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block">
-        <nav>
-          <ul className="flex mt-12 gap-8">
-            {
-              links.map(link => (
-                <li key={link.title}>
-                  <NavLink onClick={() => handleClick(link.link)} to={link.link}>
-                    {link.title}
-                  </NavLink>
-                </li>
-              ))
-            }
-          </ul>
-        </nav>
-      </div>
+      <div className="right 2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block" />
     </section>
   )
 }

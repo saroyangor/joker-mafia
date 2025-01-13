@@ -32,7 +32,7 @@ export function Schedule({scheduleRef}) {
 
   return (
     <section className="lg:mt-60 sm:mt-24 mt-16" ref={scheduleRef}>
-      <h2 className="lg:text-7xl sm:text-5xl text-3xl font-medium leading-snug">Расписание</h2>
+      <h2 className="lg:text-7xl sm:text-5xl text-3xl font-medium leading-snug lg:border-b border-white/50">Расписание</h2>
       <div className="hidden mt-6 lg:flex justify-between ">
         <ul className="flex flex-col gap-5 text-3xl">
           <li>Вторник</li>

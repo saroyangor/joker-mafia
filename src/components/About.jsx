@@ -25,7 +25,7 @@ export function About({aboutRef}) {
             благотворительные вечера и международные турниры по спортивной мафии.
           </p>
           <p className="text-3xl leading-relaxed">
-            Подробнее о становление клуба рассказываем в <a className="text-red underline font-bold" target="_blank"
+            Подробнее о становлении клуба рассказываем в <a className="text-red underline font-bold" target="_blank"
                                                             href="https://collab.am/leisure/armeniya-odna-iz-pervyh-stran-kotoraya-testirovala-sportivnye-pravila-organizator-kluba-professionalnoj-mafii-joker/">этой
             статье.</a>
           </p>
