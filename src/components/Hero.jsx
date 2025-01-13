@@ -47,7 +47,7 @@ export function Hero({allRefs, heroRef}) {
   }
 
   return (
-    <section className="flex lg:min-h-[92vh]" ref={heroRef}>
+    <section className="flex" ref={heroRef}>
       <div className="lg:max-w-[726px] mt-36 lg:absolute">
         <h1 className="lg:text-8xl sm:text-6xl text-4xl font-bold lg:mb-11 mb-5 lh-125">
           <span className="text-red">Мафия</span> клуб “Joker”
@@ -87,8 +87,8 @@ export function Hero({allRefs, heroRef}) {
           </div>
         )}
       </div>
-      <div className="2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block xl:h-[85vh]">
-        <img src={banner} alt="banner" className="w-full hidden xl:block 2xl:mt-[-85px] xl:mt-[-60px]"/>
+      <div className="2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block">
+        <img src={banner} alt="banner" className="w-full hidden xl:block"/>
       </div>
     </section>
   )
