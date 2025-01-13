@@ -17,7 +17,8 @@ body {
 
 .right {
     background-image: url("./assets/banner.JPG");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .full_screen {
