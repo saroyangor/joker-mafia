@@ -16,15 +16,8 @@ body {
 }
 
 .right {
-    background-image: url("./assets/banner.png");
-    background-size: cover;
-}
-
-.full_screen {
-    width: 100vw;
-    padding-left: 50%;
-    /*padding-right: 50%;*/
-    margin-left: -50%;
+    /*background-image: url("./assets/banner.png");*/
+    /*background-size: cover;*/
 }
 
 .lh-125 {

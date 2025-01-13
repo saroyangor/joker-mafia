@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import { Hamburger } from './Hamburger.jsx'
 
 import logo from '../assets/logo.svg'
+import banner from '../assets/banner.png'
 
 const mobileLinks = [
   {
@@ -86,7 +87,9 @@ export function Hero({allRefs, heroRef}) {
           </div>
         )}
       </div>
-      <div className="right 2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block" />
+      <div className="2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block">
+        <img src={banner} alt="banner" className="w-full hidden xl:block"/>
+      </div>
     </section>
   )
 }
