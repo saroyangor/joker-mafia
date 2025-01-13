@@ -87,8 +87,8 @@ export function Hero({allRefs, heroRef}) {
           </div>
         )}
       </div>
-      <div className="2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block">
-        <img src={banner} alt="banner" className="w-full hidden xl:block"/>
+      <div className="2xl:w-1/2 xl:w-7/12 ml-auto hidden lg:block xl:h-[85vh]">
+        <img src={banner} alt="banner" className="w-full hidden xl:block 2xl:mt-[-85px] xl:mt-[-60px]"/>
       </div>
     </section>
   )
