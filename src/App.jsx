@@ -12,6 +12,8 @@ import { Contacts } from './components/Contacts.jsx'
 import { Footer } from './components/Footer.jsx'
 import { Reviews } from './components/Reviews.jsx'
 
+import logo from './assets/logo.svg'
+
 const links = [
   {
     'title': 'О нас',
@@ -65,13 +67,20 @@ function App() {
   }
 
   const handleClick = (link) => {
-    const block = link.split('/')[1]
-    allRefs[block].current?.scrollIntoView({behavior: 'smooth', block: 'center'})
+    if (link === 'hero') {
+      heroRef.current?.scrollIntoView({behavior: 'smooth', block: 'center'})
+    } else {
+      const block = link.split('/')[1]
+      allRefs[block].current?.scrollIntoView({behavior: 'smooth', block: 'center'})
+    }
   }
 
   return (
     <main className="container mx-auto relative">
-      <nav className="sticky top-0 w-full py-8 z-50 bg-opacity-80 bg-black hidden lg:block">
+      <nav className="sticky top-0 w-full py-8 z-50 bg-opacity-80 bg-black hidden lg:flex justify-between items-center">
+        <NavLink onClick={() => handleClick('hero')} to="/">
+          <img className="sm:w-48 sm:h-24 w-32 h-16" src={logo} alt="logo"/>
+        </NavLink>
         <ul className="flex justify-end 2xl:pr-24 xl:pr-16 gap-8">
           {
             links.map(link => (

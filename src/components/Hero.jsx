@@ -47,7 +47,7 @@ export function Hero({allRefs, heroRef}) {
   }
 
   return (
-    <section className="flex" ref={heroRef}>
+    <section className="flex lg:min-h-[92vh] xl:min-h-[auto]" ref={heroRef}>
       <div className="lg:max-w-[726px] mt-36 lg:absolute">
         <h1 className="lg:text-8xl sm:text-6xl text-4xl font-bold lg:mb-11 mb-5 lh-125">
           <span className="text-red">Мафия</span> клуб “Joker”
